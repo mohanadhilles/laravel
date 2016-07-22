@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'shoppingcart@index');
+Route::post('/cart', 'shoppingcart@cart');
